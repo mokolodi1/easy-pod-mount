@@ -6,8 +6,8 @@ This repo contains the scripts necessary to easily mount and dismount POD (UCSC'
 
 1. Install OSXFUSE and SSHFS from [this website](http://osxfuse.github.io/). (OSXFUSE and SSHFS are two seperate programs. Look on the right where it says "Stable Releases")
 3. Connect to POD using Tunnelblick. The following steps will not work if you are not connected to POD.
-2. Download this git repo by using `git clone` or by clicking "Download ZIP" (above the list of files on the right).
-4. Navigate to folder you downloaded in your terminal. (ex. `cd ~/Downloads/mount-pod-locally`)
+2. Download this git repo by running `git clone https://github.com/mokolodi1/easy-pod-mount/` or by clicking "Download ZIP" (above the list of files on the right).
+4. Navigate to folder you downloaded in your terminal. (ex. `cd easy-pod-locally`)
 5. Type `./mount_pod.sh` into your terminal. This will prompt you for your username on POD as well as the folder you wish to mount. If you don't know what folder you want to mount, leave that option blank and the root folder of POD will be mounted (`/`).
 6. Woohoo! You should now have a folder called `pod-mount` with the folder you entered mounted there. (Protip: to open the current directory in Finder, type `open .`).
 7. When you want to disconnect from POD, run `./unmount_pod.sh`, which will unmount the folder from `pod-mount`.
